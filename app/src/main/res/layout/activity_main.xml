@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity A"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_start_activity_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity B"
+        android:layout_below="@id/textViewActivityA"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_start_activity_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity C"
+        android:layout_below="@id/button_start_activity_b"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@id/button_start_activity_b"/>
+
+    <Button
+        android:id="@+id/button_show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog"
+        android:layout_below="@id/button_start_activity_b"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/button_start_activity_b"/>
+
+    <TextView
+        android:id="@+id/textViewThreadCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thread Counter: 0001"
+        android:layout_below="@id/button_start_activity_c"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/button_close_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close App"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
